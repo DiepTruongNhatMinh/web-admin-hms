@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Of Doctor</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add Firebase scripts here -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container mx-auto">
+        <a href="index.html" class="text-green-500 text-2xl font-poppins">
+            <span class="material-icons-outlined">home</span>
+        </a>
+        <h1 class="text-center text-4xl font-bold text-black-500 py-12">Rating Of Doctor</h1>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-green-50">
+                <!-- Header columns -->
+                <tr>
+                    <th class="py-3 text-left text-xs font-bold text-black-500 uppercase tracking-wider">UID</th>
+                    <th class="py-3 text-left text-xs font-bold text-black-500 uppercase tracking-wider">Email Doctor</th>
+                    <th class="py-3 text-left text-xs font-bold text-black-500 uppercase tracking-wider">Email Patient</th>
+                    <th class="py-3 text-left text-xs font-bold text-black-500 uppercase tracking-wider">Feedback</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" id="tbody">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Include your Firebase configuration and script -->
+    <script src="js/ratingDoctor.js"></script>
+</body>
+</html>

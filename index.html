@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!--Monteserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    
+
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custome Css-->
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+  <body>
+
+    <div class="grid-container">
+
+      <!--Header-->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+      </header>
+
+      <!--End header-->
+
+      <!--Sidebar-->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand text-green">
+            <span class="material-icons-outlined text-green">admin_panel_settings</span> Admin Wedsite
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+        <ul class="sidebar-list">
+          <a href="doctorPage.html" style="color: white;">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">group</span> Doctors
+          </li>
+          </a>
+          <a href="patientPage.html" style="color: white;">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">person</span> Patient
+          </li>
+          </a>
+          <a href="ratingDoctor.html" style="color: white;">
+            <li class="sidebar-list-item">
+              <span class="material-icons-outlined">check</span> Rating Of Doctor
+            </li>
+          </a>
+          <a href="inforDoctor.html" style="color: white;">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">verified_user</span> Verify Account
+          </li>
+          </a>
+          <a href="confirmSchedule.html" style="color: white;">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">check</span> Schedule
+          </li>
+          </a>
+          <a href="login.html" style="color: white;">
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">logout</span> Logout
+          </li>
+          </a>
+        </ul>
+      </aside>
+      <!--End sidebar-->
+
+      <!--Main-->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">DASHBOARD</p>
+        </div>
+
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">DOCTORS</p>
+              <span class="material-icons-outlined text-blue">group</span>
+            </div>
+            <span id="approvedDoctorCount" class="text-primary font-weight-bold"></span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">PATIENT</p>
+              <span class="material-icons-outlined text-orange">person</span>
+            </div>
+            <span id="countPatients" class="text-primary font-weight-bold"></span>          
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">PATIENT BOOKING</p>
+              <span class="material-icons-outlined text-green">calendar_month</span>
+            </div>
+            <span id="countSchedule" class="text-primary font-weight-bold"></span>
+
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">VERIFY ACCOUNT</p>
+              <span class="material-icons-outlined text-red">verified_user</span>
+            </div>
+            <span id="pendingDoctorCount" class="text-primary font-weight-bold"></span>          
+          </div>
+        </div>
+
+      </main>
+      <!--End Main-->
+    </div>
+    <!--Scripts-->
+    <!--ApexCharts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.0/apexcharts.min.js" ></script>
+    <!-- Custome js-->
+        <script src="js/scripts.js"> </script>
+    <!--Link page-->
+    <a href="inforDoctor.html"></a>
+  </body>
+</html>

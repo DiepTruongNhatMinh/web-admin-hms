@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information of Doctor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add these script tags to your HTML file -->
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database-compat.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <div class="container mx-auto">
+        <a href="index.html" class="text-green-500 text-2xl font-poppins">
+            <span class="material-icons-outlined">home</span>
+        </a>
+        
+        <h1 class="text-center text-4xl font-poppins text-black-500 py-12">Information of Doctor</h1>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-green-50">
+                <tr>
+                    <th class=" py-3 text-left text-xs font-poppins text-black-500 uppercase tracking-wider">Doctor</th>
+                    <th class=" py-3 text-left text-xs font-poppins text-black-500 uppercase tracking-wider">Status</th>
+                    <th class="py-3 text-left text-xs font-poppins text-black-500 uppercase tracking-wider">Specialist</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" id="tbody">   
+            </tbody>
+        </table>
+    </div>
+
+    <!--Js-->
+    <script src="js/infDoctor.js"></script>
+</body>
+</html>

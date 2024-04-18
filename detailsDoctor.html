@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Details</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database-compat.js"></script>
+<link rel="stylesheet" href="css/styleDD.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+
+<body >
+    <div class="container light-style flex-grow-1 container-p-y">
+        <a href="inforDoctor.html" class="text-green-500 text-2xl font-poppins">
+            <span class="material-icons-outlined">
+                arrow_back
+                </span>
+        </a>
+        <h4 class="font-weight-bold py-3 mb-4 text-center">Doctor Profile</h4>
+        <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-5">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-general">
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label" >Full Name</label>
+                                    <input type="text" class="form-control mb-1" id="fullName">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Gender</label>
+                                    <input type="text" class="form-control" id="gender">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date of Birth</label>
+                                    <input type="text" class="form-control mb-1" id="date_of_birth">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Specialist</label>
+                                    <input type="text" class="form-control mb-1" id="specialist">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Register Status</label>
+                                    <input type="text" class="form-control mb-1" id="registrationStatus">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control mb-1" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Password</label>
+                                    <input type="text" class="form-control mb-1" id="password">
+                                </div>
+                                <div class="card-body media align-items-center">
+                                    <!-- Updated image element with an ID -->
+                                    <img src="" class="d-block ui-w-80" id="cert">
+                                </div>
+                                <div id="certContainer"></div> <!-- Add this line for image container -->
+                            </div>
+                        </div>
+        <div class="text-right mt-3">
+            <button type="button" class="btn btn-primary" id="approveButton">Approve</button>&nbsp;
+            <button type="button" class="btn btn-default" id="declineButton">Decline</button>
+        </div>
+    </div>
+    <script src="js/infDoctor.js"></script>
+    <script src="js/detailsDoc.js"></script>
+</body>
+
+</html>

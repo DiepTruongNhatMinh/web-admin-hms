@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors in System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add these script tags to your HTML file -->
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database-compat.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="container mx-auto">
+        <a href="index.html" class="text-green-500 text-2xl font-poppins">
+            <span class="material-icons-outlined">home</span>
+        </a>
+        <h1 class="text-center text-4xl font-bold text-black-500 py-12">Doctors in System</h1>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-green-50">
+                <tr>
+                    <th class=" py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Fullname</th>
+                    <th class=" py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Gender</th>
+                    <th class=" py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Phone Number</th>
+                    <th class=" py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Email</th>
+                    <th class=" py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Date of Birth</th>
+                    <th class="py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Specialist</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" id="tbody">   
+            </tbody>
+        </table>
+    </div>
+
+    <!--Js-->
+    <script src="js/doctorPage.js"></script>
+</body>
+</html>

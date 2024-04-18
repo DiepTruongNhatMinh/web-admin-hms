@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Add Firebase scripts here -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-auth-compat.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+</head>
+
+<body class="font-sans bg-gray-100">
+    <div class="container mx-auto p-8">
+        <a href="patientPage.html" class="text-green-500 text-2xl font-poppins">
+            <span class="material-icons-outlined">
+                arrow_back
+                </span>
+        </a>
+        <h1 class="text-4xl font-bold text-black-500 mb-8 text-center">Appointment</h1>
+        <div id="calendar"></div>
+        <div id="scheduleDetails" class="text-left space-y-4">
+            <!-- Schedule details will be displayed here -->
+        </div>
+    </div>
+
+    <div id="appointmentDetails"></div>
+
+    <script src="js/detailsPatient.js"></script>
+    
+
+</body>
+
+</html>
